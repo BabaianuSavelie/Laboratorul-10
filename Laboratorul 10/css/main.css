@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Hind:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --navbar-color: #252525;
+    --max-width-container: 80%;
+    --base-font: "Archivo Black";
+    --second-font: "Hind";
+}
+html{
+    font-family: sans-serif;
+}
+
+.navbar{
+    background-color: var(--navbar-color);
+    display: flex;
+    justify-content: center;
+}
+.navbar .container{
+    max-width: var(--max-width-container);
+    width: var(--max-width-container);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .navbar-logo{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: var(--base-font);
+}
+.container .navbar-links{
+    display: flex;
+    list-style-type: none;
+    font-family: var(--second-font);
+}
+.container .navbar-links .list-item{
+    margin: 1rem;
+    font-weight: 500;
+    position: relative;
+}
+.container .navbar-links .list-item a{
+    color: #fff;
+    text-decoration: none;
+}
+.container .navbar-links .list-item:hover a {
+    color: #ccc;
+}
+
+/*Dropdown styling*/
+.dropdown{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: calc(100% + .35rem);
+}
+.dropdown .dropdown-links{
+    list-style-type: none;
+    width: 100%;
+}
+.dropdown .dropdown-links .list-item{
+    width: 100%;
+    padding-block: .5rem;
+}
